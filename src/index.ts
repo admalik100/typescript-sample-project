@@ -11,3 +11,34 @@ level = 'a';
 function render(document: any) {
   console.log(document);
 }
+
+// --------Arrays
+
+let numbers: number[] = [1, 2, 3];
+
+// ----------Tuples
+// can have multi type data in it -> Use case store a user who has an id and a name
+// 1, 'Mosh'
+
+let user: [number, string] = [1, 'Mosh'];
+
+// ------=Enums
+// const small: number = 1;
+// const medium: number = 2;
+// const large: number = 3;
+
+// another way is by enum -> By default TS sets values to them as 0 , 1 ,2 , we can explicity specify values though
+enum size {
+  small = 2,
+  medium = 4,
+  large = 6,
+}
+
+// const enum size {
+//     small = 2,
+//     medium = 4,
+//     large = 6,
+//   }
+
+let mySize: size = size.medium;
+console.log(mySize);
