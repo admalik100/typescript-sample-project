@@ -34,4 +34,12 @@ let employee = {
     },
 };
 employee.name = 'Mosh';
+function convertKgToLbs(weight) {
+    if (typeof weight === 'number') {
+        return weight * 2.2;
+    }
+    else {
+        return parseFloat(weight) * 2.2;
+    }
+}
 //# sourceMappingURL=index.js.map

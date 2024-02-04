@@ -77,3 +77,14 @@ let employee: Employee = {
   },
 };
 employee.name = 'Mosh';
+
+// union types
+
+function convertKgToLbs(weight: number | string): number {
+  // narrowing technique
+  if (typeof weight === 'number') {
+    return weight * 2.2;
+  } else {
+    return parseFloat(weight) * 2.2;
+  }
+}
